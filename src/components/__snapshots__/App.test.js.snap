@@ -20,7 +20,9 @@ ShallowWrapper {
         className="btn-add"
         disabled={false}
         onClick={[Function]}
-    />
+    >
+        Add Gift
+    </Button>
 </div>,
   "nodes": Array [
     <div>
@@ -35,7 +37,9 @@ ShallowWrapper {
             className="btn-add"
             disabled={false}
             onClick={[Function]}
-      />
+      >
+            Add Gift
+      </Button>
 </div>,
   ],
   "options": Object {},
@@ -87,7 +91,9 @@ ShallowWrapper {
                     className="btn-add"
                     disabled={false}
                     onClick={[Function]}
-          />
+          >
+                    Add Gift
+          </Button>
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div>
@@ -102,7 +108,9 @@ ShallowWrapper {
                     className="btn-add"
                     disabled={false}
                     onClick={[Function]}
-          />
+          >
+                    Add Gift
+          </Button>
 </div>,
       },
       "_renderedNodeType": 0,
