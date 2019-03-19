@@ -13,7 +13,13 @@ class App extends Component {
     const maxId = Math.max(...gifts.map(v => v.id))
     const id = gifts.length !== 0 ? maxId : 0
     gifts.push({ id: id + 1 })
-    this.setState({gifts})
+    this.setState({ gifts })
+  }
+
+  removeGift = id => {
+    const gifts = this.state.gifts.filter(gift => gift.id !== id)
+    console.log(gifts)
+    this.setState({ gifts })
   }
 
   render () {
@@ -24,7 +30,11 @@ class App extends Component {
           {
             this.state.gifts.map(gift => {
               return (
-                <Gift key={gift.id}></Gift>
+                <Gift
+                  key={gift.id}
+                  gift={gift}
+                  removeGift={this.removeGift}
+                ></Gift>
               )
             })
           }
